@@ -1,0 +1,9 @@
+# macOS annoyances
+.DS_Store
+._*
+
+# VSCode annoyances
+.vscode/
+
+# JetBrains annoyances
+.idea/
