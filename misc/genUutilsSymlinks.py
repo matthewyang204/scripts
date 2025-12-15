@@ -94,7 +94,7 @@ if "--dir" in args:
 else:
     dir = None
 
-pathCoreutils = subprocess.run(["which", "coreutils"], capture_output=True, text=True).stdout
+pathCoreutils = subprocess.run(["which", "coreutils"], capture_output=True, text=True).stdout.strip()
 
 def genSymlink(bin):
     if dir:
