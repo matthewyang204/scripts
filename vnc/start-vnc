@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Starting virtual display..."
+Xvfb $1 -screen 0 1024x768x24 &
+export DISPLAY=$1
+openbox-session &
+
+echo "Starting VNC server..."
+x11vnc -display $1 -nopw -forever -shared -rfbport 5901 &
+
+echo "VNC now available on port 5901 (DISPLAY $1)"
