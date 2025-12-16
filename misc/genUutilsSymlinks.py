@@ -98,7 +98,7 @@ pathCoreutils = subprocess.run(["which", "coreutils"], capture_output=True, text
 
 def genSymlink(bin):
     if dir:
-        os.system(f'cd "{dir}" && ln -sf "{pathCoreutils}" "{bin}" && cd ../')
+        os.system(f'cd "{dir}" && ln -sf "{pathCoreutils}" "{bin}" && cd -')
     else:
         os.system(f'ln -sf "{pathCoreutils}" "{bin}"')
 
