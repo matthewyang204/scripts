@@ -3,6 +3,7 @@
 import os
 import sys
 import subprocess
+import shutil
 
 commands = [
     "b2sum",
@@ -94,7 +95,7 @@ if "--dir" in args:
 else:
     dir = None
 
-pathCoreutils = subprocess.run(["which", "coreutils"], capture_output=True, text=True).stdout.strip()
+pathCoreutils = shutil.which("coreutils")
 
 def genSymlink(bin):
     if dir:
