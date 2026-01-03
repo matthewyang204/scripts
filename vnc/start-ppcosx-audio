@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ffmpeg -f coreaudio -i "Soundflower (2ch)" -ac 2 -ar 44100 -c:a libopus -b:a 128k -f ogg -listen 1 http://0.0.0.0:8000/audio &
+
