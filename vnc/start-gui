@@ -6,7 +6,7 @@ sudo apt-get update -y
 sudo apt-get install -y xvfb x11vnc fluxbox websockify novnc
 
 echo "Starting virtual display..."
-Xvfb :1 -screen 0 1024x768x24 &
+Xvfb :1 -screen 0 1088x680x24 &
 export DISPLAY=:1
 fluxbox &
 
