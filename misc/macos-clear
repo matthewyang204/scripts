@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Renmane this file to `clear` and put it somewhere in your PATH
+# It clears the terminal properly so no past output can be read anymore - macOS comes with a shitty clear that works nothing like Linux's
+
+printf '\e[3J'
+/usr/bin/tput reset
