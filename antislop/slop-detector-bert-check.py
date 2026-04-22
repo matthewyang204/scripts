@@ -1,3 +1,7 @@
+# Slop detector bert checker script
+# (C) 2026 Matthew Yang (杨佳明)
+# Licensed under the GNU GPL, version 3
+
 import sys
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 from peft import PeftModel
