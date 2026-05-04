@@ -113,7 +113,7 @@ def calc10():
 
     print(binomialProb(r, n, p))
 
-def calc10():
+def calc10_1():
     p = 1/4
     n = 5
     r = 2
