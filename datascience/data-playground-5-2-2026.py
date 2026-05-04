@@ -15,7 +15,7 @@ def calc1():
 def computeExpected(amounts, probabilities):
     if len(amounts) != len(probabilities):
         print("ERROR: Cannot compute unequal lengthed amounts against probabilities")
-        return
+        raise ValueError("Lengths of lists must match")
     
     added = 0
     for i in range(len(amounts)):
