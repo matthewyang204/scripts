@@ -1,5 +1,6 @@
 import math
 
+# Useless calc1 - see computeExpected for proper computation
 def calc1():
     amounts = [0, 50000, 100000, 150000, 200000, 250000]
     probabilities = [0.65, 0.23, 0.08, 0.02, 0.01, 0.01]
