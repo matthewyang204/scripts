@@ -19,8 +19,8 @@ def computeExpected(amounts, probabilities):
     
     added = 0
     for i in range(len(amounts)):
-        amount = amounts[i-1]
-        probability = probabilities[i-1]
+        amount = amounts[i]
+        probability = probabilities[i]
         added = added + (amount * probability)
 
     return added
