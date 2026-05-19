@@ -153,6 +153,12 @@ def calc12():
         r += 1
     print(totalProb)
 
+def calc13():
+    probabilities = [1/400, 2/400, 5/400, 392/400]
+    amounts = [700 - 4, 300 - 4, 100 - 4, -4]
+
+    print(computeExpected(probabilities, amounts))
+
 if __name__ == '__main__':
-    calc12()
+    calc13()
 
