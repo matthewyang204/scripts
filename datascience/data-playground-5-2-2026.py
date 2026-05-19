@@ -17,7 +17,7 @@ def computeExpected(amounts, probabilities):
     if len(amounts) != len(probabilities):
         print("ERROR: Cannot compute unequal lengthed amounts against probabilities")
         raise ValueError("Lengths of lists must match")
-    
+
     added = 0
     for i in range(len(amounts)):
         amount = amounts[i]
@@ -81,7 +81,7 @@ def calc8():
     unitPrice = 140
     n = 600
     soldFor = unitPrice * n
-    
+
     amounts = [-unitPrice, value-unitPrice]
     probabilities = [599/600, 1/600]
 
@@ -159,6 +159,11 @@ def calc13():
 
     print(computeExpected(probabilities, amounts))
 
-if __name__ == '__main__':
-    calc13()
+def calc14():
+    probabilities = [1/12, 1/12, 1/12, 1/12, 1/12, 1/12, 1/12, 1/12, 1/12, 1/12, 1/12, 1/12,]
+    amounts = [200, 400, 100, 500, 700, 1000, 300, 800, 900, 600, -1300, 0]
 
+    print(computeExpected(probabilities, amounts))
+
+if __name__ == '__main__':
+    calc14()
