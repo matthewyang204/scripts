@@ -165,5 +165,23 @@ def calc14():
 
     print(computeExpected(probabilities, amounts))
 
+def calc15():
+    probabilities = [0.994, 1-0.994]
+    amounts = [-100, 15000-100]
+    
+    print(computeExpected(probabilities, amounts))
+
+def calc16():
+    p = 0.04
+    n = 50
+    r = [1, 0]
+    
+    totalProb = 0
+    for rate in r:
+        add = binomialProb(rate, n, p)
+        totalProb += add
+        
+    print(totalProb)
+
 if __name__ == '__main__':
-    calc14()
+    calc16()
