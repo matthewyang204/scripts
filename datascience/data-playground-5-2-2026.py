@@ -182,5 +182,29 @@ def calc16():
         
     print(totalProb)
 
+def calc17():
+    p = 1-0.2
+    n = 12
+    r = [11, 12]
+    
+    totalProb = 0
+    for rate in r:
+        add = binomialProb(rate, n, p)
+        totalProb += add
+        
+    print(totalProb)
+
+def calc18():
+    p = 0.025
+    n = 8
+    r = [2, 3, 4, 5, 6, 7, 8]
+    
+    totalProb = 0
+    for rate in r:
+        add = binomialProb(rate, n, p)
+        totalProb += add
+        
+    print(totalProb)
+
 if __name__ == '__main__':
-    calc16()
+    calc18()
