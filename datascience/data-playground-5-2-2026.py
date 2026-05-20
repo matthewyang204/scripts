@@ -103,8 +103,7 @@ def calc9():
     print(total)
 
 def binomialProb(r, n, p):
-    comb = math.comb(n, r)
-    finalResult = comb * (p**r) * ((1-p)**(n-r))
+    finalResult = math.comb(n, r) * (p**r) * ((1-p)**(n-r))
     return finalResult
 
 def calc10():
