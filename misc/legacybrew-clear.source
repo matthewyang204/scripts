@@ -1,0 +1,2 @@
+# Source this file on shell startup to use clear (assumes the clear script is in /usr/local/bin)
+clear() { /usr/local/opt/custom-clear/bin/clear "$@"; }
