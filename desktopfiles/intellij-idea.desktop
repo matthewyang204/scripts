@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IntelliJ IDEA
+Comment=Capable and Ergonomic IDE for JVM Language Development
+Exec=/opt/intellij-idea/bin/idea %f
+Icon=/opt/intellij-idea/bin/idea.svg
+Terminal=false
+StartupNotify=true
+Categories=Development;IDE;Java;
+MimeType=text/plain;text/*;
