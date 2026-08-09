@@ -1,4 +1,4 @@
-# Slop detector bert checker script
+# Slop detector bert checker script (uses slop detector BERT model by Xander Gouws)
 # (C) 2026 Matthew Yang (杨佳明)
 # Licensed under the GNU GPL, version 3
 
